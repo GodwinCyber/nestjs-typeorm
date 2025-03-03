@@ -1,0 +1,11 @@
+# services
+services:
+  mysql:
+    image: mysql
+# environmental variables
+    env_file:
+      - .env
+    ports:
+      - "3306:3306"
+
+
