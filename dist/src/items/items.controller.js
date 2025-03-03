@@ -22,7 +22,7 @@ let ItemsController = class ItemsController {
     constructor(itemsService) {
         this.itemsService = itemsService;
     }
-    create(createItemDto) {
+    async create(createItemDto) {
         return this.itemsService.create(createItemDto);
     }
     findAll() {
@@ -44,7 +44,7 @@ __decorate([
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [create_item_dto_1.CreateItemDto]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], ItemsController.prototype, "create", null);
 __decorate([
     (0, common_1.Get)(),

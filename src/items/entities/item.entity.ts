@@ -13,7 +13,7 @@ export class Item {
     @Column({ default: true }) // set a default value for the property to true
     public: boolean;
 
-    constructor(item: Partial<Item>) {
+    constructor(item: Partial<Item>) { //take partail information from the entity
         Object.assign(this, item);
     }
 } // the class that will be used as a TypeORM entity

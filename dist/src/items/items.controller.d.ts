@@ -4,7 +4,7 @@ import { UpdateItemDto } from './dto/update-item.dto';
 export declare class ItemsController {
     private readonly itemsService;
     constructor(itemsService: ItemsService);
-    create(createItemDto: CreateItemDto): string;
+    create(createItemDto: CreateItemDto): Promise<void>;
     findAll(): string;
     findOne(id: string): string;
     update(id: string, updateItemDto: UpdateItemDto): string;
